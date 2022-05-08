@@ -1,0 +1,2939 @@
+2022-05-08 08:49:04,803 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:49:05,354 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:49:34,008 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:49:34,655 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:07,754 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:08,407 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:08,788 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:09,132 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:09,366 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:09,559 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:09,754 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:09,947 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:10,148 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:10,335 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:10,544 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:10,732 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:10,931 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:11,121 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:11,313 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:11,515 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:11,696 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:52:11,876 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:53:05,501 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:53:06,089 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:53:06,419 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:14,648 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:15,193 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:15,550 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:15,791 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:16,006 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:16,203 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:16,392 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:16,591 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:49,095 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:49,828 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:50,188 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:50,389 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:50,562 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:55:59,414 [ERROR] app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/myuser/app/simple_pages/__init__.py", line 11, in index
+    return render_template('index.html')
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/simple_pages/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:56:05,603 [ERROR] app: Exception on /index [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:56:10,193 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:35,966 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:36,532 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:36,790 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:36,972 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:37,136 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:37,310 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:37,475 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:54,580 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:55,126 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:55,334 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:55,551 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:55,737 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:57:55,908 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:58:53,167 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 08:58:53,806 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:04:29,196 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:04:29,782 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:12:42,410 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:12:42,440 [ERROR] app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:12:43,058 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:12:43,676 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:14:21,177 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:14:21,845 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:14:22,253 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:14:22,498 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:14:22,808 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:16:54,703 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:16:55,204 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:16:55,605 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:19:55,680 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:19:55,713 [ERROR] app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:19:56,758 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+    {% if current_user.is_authenticated %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:20:53,374 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:21:38,780 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:21:39,383 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:22:44,485 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 35, in top-level template code
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'current_user' is undefined
+2022-05-08 09:23:12,247 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/base.html", line 69, in template
+    Environment: {{ deployment_environment }} - Copyright: {{ year }} {{ format_price(100) }}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2022-05-08 09:23:13,168 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/base.html", line 69, in template
+    Environment: {{ deployment_environment }} - Copyright: {{ year }} {{ format_price(100) }}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2022-05-08 09:24:00,849 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 68, in top-level template code
+    Environment: {{ deployment_environment }} - Copyright: {{ year }} {{ format_price(100) }}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'format_price' is undefined
+2022-05-08 09:24:01,434 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 68, in top-level template code
+    Environment: {{ deployment_environment }} - Copyright: {{ year }} {{ format_price(100) }}
+  File "/usr/local/lib/python3.8/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'format_price' is undefined
+2022-05-08 09:26:06,750 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 68, in top-level template code
+    </footer>
+  File "/usr/local/lib/python3.8/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'format_price' is undefined
+2022-05-08 09:26:06,786 [ERROR] app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 68, in top-level template code
+    </footer>
+  File "/usr/local/lib/python3.8/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'format_price' is undefined
+2022-05-08 09:26:07,303 [ERROR] app: Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1481, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/flask/ctx.py", line 397, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/usr/local/lib/python3.8/site-packages/werkzeug/routing.py", line 2049, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1384, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1324, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "/home/myuser/app/error_handlers/__init__.py", line 9, in page_not_found
+    return render_template("404.html"), 404
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/usr/local/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/myuser/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/myuser/app/templates/base.html", line 68, in top-level template code
+    </footer>
+  File "/usr/local/lib/python3.8/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'format_price' is undefined
