@@ -47,9 +47,9 @@
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="{{ url_for("auth.view_profile") }}">My Profile</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage Account</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage Account</a></li>
                             {% if current_user.is_admin %}
-                                {{ render_nav_item('management.browse_users', 'Manage Users') }}
+                                <li><a class="dropdown-item" href="{{ url_for("management.browse_users") }}">Manage Users</a></li>
                             {% endif %}
                             <li><a class="dropdown-item" href="{{ url_for("auth.logout") }}">Logout</a></li>
                         </ul>
