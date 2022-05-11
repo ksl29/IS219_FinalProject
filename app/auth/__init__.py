@@ -6,7 +6,7 @@ from jinja2 import TemplateNotFound
 from sqlalchemy import select
 from werkzeug.security import generate_password_hash
 
-from app.auth.forms import signup_form, signin_form
+from app.auth.forms import signup_form, signin_form, profile_form, security_form
 from app.db import db
 from app.db.models import User
 
@@ -59,6 +59,7 @@ def signin():
             return redirect(url_for('auth.home'))
     return render_template('signin.html', form=form)
 
+
 @auth.route("/logout")
 @login_required
 def logout():
@@ -75,6 +76,38 @@ def logout():
 @login_required
 def home():
     try:
-        return render_template('dashboard.html')
+        return render_template('home.html')
     except TemplateNotFound:
         abort(404)
+
+@auth.route('/profile/edit', methods=['GET'])
+def view_profile():
+    try:
+        return render_template('profile_view.html')
+    except TemplateNotFound:
+        abort(404)
+@auth.route('/profile/edit', methods=['POST', 'GET'])
+def edit_profile():
+    user = User.query.get(current_user.get_id())
+    form = profile_form(obj=user)
+    if form.validate_on_submit():
+        user.about = form.about.data
+        db.session.add(current_user)
+        db.session.commit()
+        flash('You Successfully Updated your Profile', 'success')
+        return redirect(url_for('auth.view_profile'))
+    return render_template('profile_edit.html', form=form)
+
+
+@auth.route('/account', methods=['POST', 'GET'])
+def edit_account():
+    user = User.query.get(current_user.get_id())
+    form = security_form(obj=user)
+    if form.validate_on_submit():
+        user.email = form.email.data
+        user.password = form.password.data
+        db.session.add(current_user)
+        db.session.commit()
+        flash('You Successfully Updated your Password or Email', 'success')
+        return redirect(url_for('auth.home'))
+    return render_template('manage_account.html', form=form)
