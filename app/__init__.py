@@ -48,6 +48,7 @@ def create_app():
     return app
 
 
+
 @login_manager.user_loader
 def user_loader(user_id):
     try:
