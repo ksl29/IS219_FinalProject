@@ -38,9 +38,4 @@ def create_app():
     db.init_app(app)
     app.cli.add_command(create_database)
 
-
-    @app.route('/')
-    def hello():
-        return 'Hello, World!'
-
     return app

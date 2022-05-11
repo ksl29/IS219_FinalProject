@@ -8,7 +8,7 @@ from app import config
 
 db = SQLAlchemy()
 
-database = Blueprint('database', __name__, )
+database = Blueprint('database', __name__,)
 
 
 @database.cli.command('create')
