@@ -4,6 +4,14 @@ from wtforms.fields import *
 
 
 class create_user_form(FlaskForm):
+    f_name = StringField('First Name', [
+        validators.DataRequired(),
+
+    ], description="Enter your first name")
+    l_name = StringField('Last Name', [
+        validators.DataRequired(),
+
+    ], description="Enter your last name")
     email = EmailField('Email Address', [
         validators.DataRequired(),
 

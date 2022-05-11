@@ -8,6 +8,7 @@ from flask_cors import CORS
 from flask_wtf.csrf import CSRFProtect
 
 from app.auth import auth
+from app.management import management
 from app.cli import create_database
 from app.db import db, database
 from app.db.models import User
@@ -30,11 +31,14 @@ def create_app():
     # login manager
     login_manager.init_app(app)
     login_manager.login_view = "auth.signin"
+    #csrf
+    csrf = CSRFProtect(app)
     # added bootstrap 5 to project
     bootstrap = Bootstrap5(app);
     # these load functions with web interface
     app.register_blueprint(database)
     app.register_blueprint(auth)
+    app.register_blueprint(management)
     app.register_blueprint(simple_pages)
     # these load functionality without a web interface
     app.register_blueprint(error_handlers)

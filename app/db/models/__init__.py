@@ -5,7 +5,9 @@ from sqlalchemy.orm import relationship, declarative_base
 from werkzeug.security import check_password_hash, generate_password_hash
 from app.db import db
 from flask_login import UserMixin
+
 Base = declarative_base()
+
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
@@ -24,7 +26,7 @@ class User(UserMixin, db.Model):
     # `roles` and `groups` are reserved words that *must* be defined
     # on the `User` model to use group- or role-based authorization.
 
-    def __init__(self, email, password,fname, lname, is_admin):
+    def __init__(self, email, password, fname, lname, is_admin):
         self.email = email
         self.password = password
         self.fname = fname

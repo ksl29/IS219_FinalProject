@@ -80,7 +80,7 @@ def home():
     except TemplateNotFound:
         abort(404)
 
-@auth.route('/profile/edit', methods=['GET'])
+@auth.route('/profile', methods=['GET'])
 def view_profile():
     try:
         return render_template('profile_view.html')
