@@ -8,6 +8,7 @@ from app.db import db
 @click.command(name='create-db')
 @with_appcontext
 def create_database():
+    click.echo('test')
     # get root directory of project
     root = os.path.dirname(os.path.abspath(__file__))
     # set the name of the apps log folder to logs
