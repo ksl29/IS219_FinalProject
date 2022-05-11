@@ -19,9 +19,10 @@ def signup():
         return redirect(url_for('auth.home'))
     form = signup_form()
     if form.validate_on_submit():
-        user = User.query_filter_by(email=form.email.data).first()
+        user = User.query.filter_by(email=form.email.data).first()
         if user is None:
-            user = User(email=form.email.data, password=generate_password_hash(form.password.data), is_admin=0)
+            user = User(email=form.email.data, password=generate_password_hash(form.password.data),
+                        fname=form.f_name.data, lname=form.l_name.data, is_admin=0)
             db.session.add(user)
             db.session.commit()
             if user.id == 1:

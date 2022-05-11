@@ -13,8 +13,8 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(300), nullable=False, unique=True)
-    fname = db.Column(db.String(120), nullable=False, unique=True)
-    lname = db.Column(db.String(120), nullable=False, unique=True)
+    fname = db.Column(db.String(120), nullable=False, unique=False)
+    lname = db.Column(db.String(120), nullable=False, unique=False)
     about = db.Column(db.String(300), nullable=True, unique=False)
     authenticated = db.Column(db.Boolean, default=False)
     registered_on = db.Column('registered_on', db.DateTime)
@@ -24,10 +24,13 @@ class User(UserMixin, db.Model):
     # `roles` and `groups` are reserved words that *must* be defined
     # on the `User` model to use group- or role-based authorization.
 
-    def __init__(self, email, password):
+    def __init__(self, email, password,fname, lname, is_admin):
         self.email = email
         self.password = password
+        self.fname = fname
+        self.lname = lname
         self.registered_on = datetime.utcnow()
+        self.is_admin = is_admin
 
     def is_authenticated(self):
         return True

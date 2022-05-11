@@ -43,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                            My Account
+                           {{ current_user.fname + " " + current_user.lname }}
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="{{ url_for("auth.home") }}">Home</a></li>
@@ -54,8 +54,8 @@
                         </ul>
                     </li>
                     {% else %}
-                        {{ render_nav_item('auth.signup','Sign Up' ) }}
-                        {{ render_nav_item('auth.signin','Sign In' ) }}
+                        <button>{{ render_nav_item('auth.signup','Sign Up' ) }}</button>
+                        <button>{{ render_nav_item('auth.signin','Sign In' ) }}</button>
                     {% endif %}
                 </div>
             </nav>
