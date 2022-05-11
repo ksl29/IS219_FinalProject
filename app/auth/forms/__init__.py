@@ -4,6 +4,14 @@ from wtforms.fields import *
 
 
 class signup_form(FlaskForm):
+    f_name = StringField('First Name', [
+        validators.DataRequired(),
+
+    ], description="Enter your first name")
+    l_name = StringField('Last Name', [
+        validators.DataRequired(),
+
+    ], description="Enter your last name")
     email = EmailField('Email Address', [
         validators.DataRequired(),
 
@@ -19,4 +27,12 @@ class signup_form(FlaskForm):
 
 
 class signin_form(FlaskForm):
+    email = EmailField('Email Address', [
+        validators.DataRequired(),
+    ])
+
+    password = PasswordField('Password', [
+        validators.DataRequired(),
+        validators.length(min=8, max=35)
+    ])
     submit = SubmitField()

@@ -13,6 +13,8 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(300), nullable=False, unique=True)
+    fname = db.Column(db.String(120), nullable=False, unique=True)
+    lname = db.Column(db.String(120), nullable=False, unique=True)
     about = db.Column(db.String(300), nullable=True, unique=False)
     authenticated = db.Column(db.Boolean, default=False)
     registered_on = db.Column('registered_on', db.DateTime)
