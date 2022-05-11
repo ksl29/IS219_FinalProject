@@ -46,9 +46,10 @@
                            {{ current_user.fname + " " + current_user.lname }}
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ url_for("auth.home") }}">Home</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for("auth.view_profile") }}">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage Account</a></li>
                             {% if current_user.is_admin %}
-                                {{ render_nav_item('auth.home', 'Home') }}
+                                {{ render_nav_item('management.browse_users', 'Manage Users') }}
                             {% endif %}
                             <li><a class="dropdown-item" href="{{ url_for("auth.logout") }}">Logout</a></li>
                         </ul>
