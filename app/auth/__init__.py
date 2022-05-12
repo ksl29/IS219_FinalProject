@@ -9,6 +9,7 @@ from werkzeug.security import generate_password_hash
 from app.auth.forms import signup_form, signin_form, profile_form, security_form
 from app.db import db
 from app.db.models import User
+from app.todo import todo
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 
@@ -16,7 +17,7 @@ auth = Blueprint('auth', __name__, template_folder='templates')
 @auth.route('/signup', methods=['POST', 'GET'])
 def signup():
     if current_user.is_authenticated:
-        return redirect(url_for('auth.home'))
+        return redirect(url_for('todo.home'))
     form = signup_form()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
@@ -44,7 +45,7 @@ def signup():
 def signin():
     form = signin_form()
     if current_user.is_authenticated:
-        return redirect(url_for('auth.home'))
+        return redirect(url_for('todo.home'))
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user is None or not user.check_password(form.password.data):
@@ -56,7 +57,7 @@ def signin():
             db.session.commit()
             login_user(user)
             flash("Welcome", 'success')
-            return redirect(url_for('auth.home'))
+            return redirect(url_for('todo.home'))
     return render_template('signin.html', form=form)
 
 
@@ -71,14 +72,6 @@ def logout():
     logout_user()
     return redirect(url_for('auth.signin'))
 
-
-@auth.route('/home', methods=['GET'])
-@login_required
-def home():
-    try:
-        return render_template('home.html')
-    except TemplateNotFound:
-        abort(404)
 
 @auth.route('/profile', methods=['GET'])
 def view_profile():
@@ -109,5 +102,5 @@ def edit_account():
         db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Password or Email', 'success')
-        return redirect(url_for('auth.home'))
+        return redirect(url_for('todo.home'))
     return render_template('manage_account.html', form=form)
