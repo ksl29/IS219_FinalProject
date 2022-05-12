@@ -9,12 +9,14 @@ from flask_wtf.csrf import CSRFProtect
 
 from app.auth import auth
 from app.management import management
+from app.todo import todo
 from app.cli import create_database
 from app.db import db, database
 from app.db.models import User
 from app.error_handlers import error_handlers
 from app.logging_config import log_con, LOGGING_CONFIG
 from app.simple_pages import simple_pages
+from app.todo import todo
 
 login_manager = flask_login.LoginManager()
 
@@ -38,6 +40,7 @@ def create_app():
     # these load functions with web interface
     app.register_blueprint(database)
     app.register_blueprint(auth)
+    app.register_blueprint(todo)
     app.register_blueprint(management)
     app.register_blueprint(simple_pages)
     # these load functionality without a web interface
