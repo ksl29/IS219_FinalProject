@@ -6,6 +6,7 @@ from sqlalchemy import desc
 from app.db import db
 from app.db.models import Task
 from app.todo.forms import add_task_form, edit_task_form
+from werkzeug.utils import redirect
 
 todo = Blueprint('todo', __name__, template_folder='templates')
 
@@ -25,7 +26,7 @@ def browse_tasks(page):
     data = pagination.items
     retrieve_task = ('todo.retrieve_task',[('tasks_id',':id')])
     edit_task = ('todo.edit_task',[('tasks_id',':id')])
-    add_task = url_for(todo.add_task)
+    add_task = url_for('todo.add_task')
     delete_task = ('todo.delete_task',[('tasks_id',':id')])
     
     try:
@@ -42,14 +43,14 @@ def retrieve_task(tasks_id):
 
 @todo.route('/tasks/<int:tasks_id>/edit', methods=['POST', 'GET'])
 @login_required
-def edit_task():
+def edit_task(tasks_id):
     task = Task.query.get(tasks_id)
     form = edit_task_form(obj=task)
     if form.validate_on_submit():
         task.title = form.title.data
-        task.description = form.about.data
+        task.description = form.description.data
         task.due_date = form.due_date.data
-        task.is_complete = int(form.is_admin.data)
+        task.is_complete = int(form.is_complete.data)
         task.is_important = int(form.is_important.data)
         db.session.add(task)
         db.session.commit()
@@ -65,9 +66,9 @@ def add_task():
     if form.validate_on_submit():
         task = Task.query.filter_by(title=form.title.data).first()
         if task is None:
-            task = Task(title=form.title.data, description=form.description.data, due_date=form.due_data.data,
+            new_task = Task(title=form.title.data, description=form.description.data, due_date=form.due_date.data,
                         is_important= form.is_important.data, is_complete=form.is_complete.data)
-            db.session.add(task)
+            db.session.add(new_task)
             db.session.commit()
             flash('Congratulations, you just created a task', 'success')
             return redirect(url_for('todo.home'))
@@ -79,8 +80,8 @@ def add_task():
 @todo.route('/users/<int:tasks_id>/delete', methods=['POST'])
 @login_required
 def delete_task():
-    task = Task.query.get(tasks_id)
-    db.session.delete(task)
+    tasks_id = Task.query.get(tasks_id)
+    db.session.delete(tasks_id)
     db.session.commit()
     flash('Task Deleted', 'success')
     return redirect(url_for('todo.home'), 302)
