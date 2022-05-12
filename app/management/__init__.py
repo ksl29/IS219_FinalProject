@@ -1,7 +1,7 @@
 import logging
 
 from flask import Blueprint, render_template, redirect, url_for, flash, current_app, abort
-from flask_login import login_user, login_required, logout_user, current_user
+from flask_login import login_required, current_user
 from jinja2 import TemplateNotFound
 from sqlalchemy import select
 from werkzeug.security import generate_password_hash
@@ -11,8 +11,8 @@ from app.management.forms import user_edit_form, create_user_form
 from app.db import db
 from app.db.models import User
 
-
 management = Blueprint('management', __name__, template_folder='templates')
+
 
 @management.route('/users')
 @login_required
@@ -20,15 +20,15 @@ management = Blueprint('management', __name__, template_folder='templates')
 def browse_users():
     data = User.query.all()
     titles = [('email', 'Email'), ('registered_on', 'Registered On')]
-    retrieve_url = ('auth.retrieve_user', [('user_id', ':id')])
-    edit_url = ('auth.edit_user', [('user_id', ':id')])
-    add_url = url_for('auth.add_user')
-    delete_url = ('auth.delete_user', [('user_id', ':id')])
+    retrieve_url = ('management.retrieve_user', [('user_id', ':id')])
+    edit_url = ('management.edit_user', [('user_id', ':id')])
+    add_url = url_for('management.add_user')
+    delete_url = ('management.delete_user', [('user_id', ':id')])
 
     current_app.logger.info("Browse page loading")
 
     return render_template('browse.html', titles=titles, add_url=add_url, edit_url=edit_url, delete_url=delete_url,
-                           retrieve_url=retrieve_url, data=data, User=User, record_type="Users")
+                           retrieve_url=retrieve_url, data=data, User=User, record_type="users")
 
 
 @management.route('/users/<int:user_id>')
@@ -61,7 +61,8 @@ def add_user():
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user is None:
-            user = User(email=form.email.data, password=generate_password_hash(form.password.data), is_admin=int(form.is_admin.data))
+            user = User(email=form.email.data, password=generate_password_hash(form.password.data),
+                        fname=form.f_name.data, lname=form.l_name.data, is_admin=int(form.is_admin.data))
             db.session.add(user)
             db.session.commit()
             flash('Congratulations, you just created a user', 'success')

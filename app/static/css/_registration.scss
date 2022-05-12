@@ -1,0 +1,37 @@
+@mixin regisStyle {
+    padding: 1em;
+    margin: 2% auto 0 auto;
+    background-color: $secBg;
+    color: $primaryText;
+    h2 {
+        text-align: center;
+    }
+    input#submit {
+        margin: 0 auto;
+    }
+    input.form-control {
+        background-color: $tertBg;
+        border: none;
+        border-radius: 0;
+        color: $primaryText;
+    }
+}
+
+
+#sign-up {
+    height: 50%;
+    width: 75%;
+    @include regisStyle()
+}
+
+.switch-form {
+    margin: 1em;
+    text-align: center;
+    color: $primaryText;
+}
+
+#sign-in {
+    width: 50%;
+    height: 50%;
+    @include regisStyle()
+}
