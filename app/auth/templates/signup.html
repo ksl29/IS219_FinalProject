@@ -2,11 +2,9 @@
 {% block content %}
     {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
 
-    <div class="row">
-        <div class="col-7">
+        <div id="sign-up">
             <h2>Create An Account</h2>
             {{ render_form(form) }}
         </div>
-    </div>
-    <p>Already have an account?<strong><a href="{{ url_for('auth.signin') }}">Sign In</a></strong></p>
+    <p class="switch-form">Already have an account?<strong><a href="{{ url_for('auth.signin') }}"> Sign In</a></strong></p>
 {% endblock %}

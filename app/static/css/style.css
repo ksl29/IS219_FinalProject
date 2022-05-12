@@ -1,3 +1,60 @@
-body {
-font-size: 200%;
+#sign-up {
+  height: 50%;
+  width: 75%;
+  padding: 1em;
+  margin: 2% auto 0 auto;
+  background-color: #333333;
+  color: #ffffff;
 }
+
+#sign-up h2 {
+  text-align: center;
+}
+
+#sign-up input#submit {
+  margin: 0 auto;
+}
+
+#sign-up input.form-control {
+  background-color: #5c5c5c;
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.switch-form {
+  margin: 1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+#sign-in {
+  width: 50%;
+  height: 50%;
+  padding: 1em;
+  margin: 2% auto 0 auto;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#sign-in h2 {
+  text-align: center;
+}
+
+#sign-in input#submit {
+  margin: 0 auto;
+}
+
+#sign-in input.form-control {
+  background-color: #5c5c5c;
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  font-size: 200%;
+}
+/*# sourceMappingURL=style.css.map */

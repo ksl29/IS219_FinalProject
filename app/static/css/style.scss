@@ -1,0 +1,11 @@
+
+@import './variables';
+@import './navbar';
+@import './registration';
+@import './app';
+
+body {
+    background-color: $primaryBg !important;
+    color: $primaryText !important;
+    font-size: 200%;
+}
