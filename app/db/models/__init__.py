@@ -20,18 +20,18 @@ class Task(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(300), nullable=True, unique=False)
     description = db.Column(db.String(300), nullable=True, unique=False)
-    due_date = db.Column('due_date', db.DateTime)
-    completion = db.Column('is_completed', db.Boolean(), nullable=False, server_default='0')
-    importance = db.Column('is_important', db.Boolean(), nullable=False, server_default='0')
+    due_date = db.Column('due_date', db.Date)
+    is_complete = db.Column('is_complete', db.Boolean(), nullable=False, server_default='0')
+    is_important = db.Column('is_important', db.Boolean(), nullable=False, server_default='0')
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     user = relationship("User", back_populates="tasks", uselist=False)
 
-    def __init__(self, title, description, due_date, importance, completion):
+    def __init__(self, title, description, due_date, is_important, is_complete):
         self.title = title
         self.description = description
         self.due_date = due_date
-        self.importance = importance
-        self.completion = completion
+        self.is_important = is_important
+        self.is_complete = is_complete
 
 
 class User(UserMixin, db.Model):
