@@ -10,7 +10,7 @@ def test_adding_user(application):
         assert db.session.query(User).count() == 0
         #showing how to add a record
         #create a record
-        user = User('ksl29@njit.edu', 'Password123', 'Kadeem', 'Lewis',0)
+        user = User('ksl29@njit.edu', 'Password@123', 'Kadeem', 'Lewis',0)
         #add it to get ready to be committed
         db.session.add(user)
         #finding one user record by email

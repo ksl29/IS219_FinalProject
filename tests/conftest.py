@@ -34,7 +34,7 @@ def application():
 def add_user(application):
     with application.app_context():
         # new record
-        user = User('ksl29@njit.edu', 'Password@123')
+        user = User('ksl29@njit.edu', 'Password@123','Kadeem', 'Lewis',1)
         db.session.add(user)
         db.session.commit()
 
