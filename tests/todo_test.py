@@ -1,3 +1,7 @@
+from app import db
+from app.db.models import Task
+from faker import Faker
+import datetime
 """This test the homepage"""
 
 def test_todo_pages(client):

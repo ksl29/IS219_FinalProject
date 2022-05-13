@@ -22,7 +22,3 @@ def test_adding_user(application):
         #checking cascade delete
         db.session.delete(user)
         assert db.session.query(User).count() == 0
-
-
-
-
