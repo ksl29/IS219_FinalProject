@@ -56,4 +56,8 @@ body, html {
   background-color: #121212 !important;
   color: #ffffff !important;
 }
+
+table, td, th {
+  color: #ffffff !important;
+}
 /*# sourceMappingURL=style.css.map */
