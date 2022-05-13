@@ -10,13 +10,14 @@ from werkzeug.utils import redirect
 
 todo = Blueprint('todo', __name__, template_folder='templates')
 
+
 @todo.route('/home')
 def home():
-     
     try:
         return render_template('home.html')
     except TemplateNotFound:
         abort(404)
+
 
 @todo.route('/tasks', methods=['GET'], defaults={"page": 1})
 @todo.route('/tasks/<int:page>', methods=['GET'])
@@ -25,22 +26,24 @@ def browse_tasks(page):
     per_page = 10
     pagination = Task.query.paginate(page, per_page, error_out=False)
     data = pagination.items
-    retrieve_task = ('todo.retrieve_task',[('tasks_id',':id')])
-    edit_task = ('todo.edit_task',[('tasks_id',':id')])
+    edit_task = ('todo.edit_task', [('tasks_id', ':id')])
     add_task = url_for('todo.add_task')
-    delete_task = ('todo.delete_task',[('tasks_id',':id')])
-    
+    delete_task = ('todo.delete_task', [('tasks_id', ':id')])
+
     try:
-        return render_template('browse_tasks.html', data=data,pagination=pagination, Task=Task,
-                               retrieve_task=retrieve_task, edit_task=edit_task, add_task=add_task, delete_task=delete_task)
+        return render_template('browse_tasks.html', data=data, pagination=pagination, Task=Task,
+                               edit_task=edit_task, add_task=add_task,
+                               delete_task=delete_task)
     except TemplateNotFound:
         abort(404)
- 
+
+
 @todo.route('/tasks/<int:tasks_id>')
-@login_required       
+@login_required
 def retrieve_task(tasks_id):
     task = Task.query.get(tasks_id)
     return render_template('view_task.html', task=task)
+
 
 @todo.route('/tasks/<int:tasks_id>/edit', methods=['POST', 'GET'])
 @login_required
@@ -57,8 +60,9 @@ def edit_task(tasks_id):
         db.session.commit()
         flash('Task Edited Successfully', 'success')
         current_app.logger.info("edited a task")
-        return redirect(url_for('todo.home'))
+        return redirect(url_for('todo.browse_tasks'))
     return render_template('edit_task.html', form=form)
+
 
 @todo.route('/tasks/new', methods=['POST', 'GET'])
 @login_required
@@ -68,21 +72,22 @@ def add_task():
         task = Task.query.filter_by(title=form.title.data).first()
         if task is None:
             new_task = Task(title=form.title.data, description=form.description.data, due_date=form.due_date.data,
-                        is_important= form.is_important.data, is_complete=form.is_complete.data)
+                            is_important=form.is_important.data, is_complete=form.is_complete.data)
             db.session.add(new_task)
             db.session.commit()
             flash('Congratulations, you just created a task', 'success')
-            return redirect(url_for('todo.home'))
+            return redirect(url_for('todo.browse_tasks'))
         else:
             flash('Task already exists')
-            return redirect(url_for('todo.home'))
+            return redirect(url_for('todo.browse_tasks'))
     return render_template('add_task.html', form=form)
+
 
 @todo.route('/users/<int:tasks_id>/delete', methods=['POST'])
 @login_required
-def delete_task():
+def delete_task(tasks_id):
     tasks_id = Task.query.get(tasks_id)
     db.session.delete(tasks_id)
     db.session.commit()
     flash('Task Deleted', 'success')
-    return redirect(url_for('todo.home'), 302)
+    return redirect(url_for('todo.browse_tasks'), 302)

@@ -8,3 +8,6 @@ body,html {
     background-color: $primaryBg !important;
     color: $primaryText !important;
 }
+table, td, th {
+    color: $primaryText !important; 
+}

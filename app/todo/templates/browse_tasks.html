@@ -9,7 +9,6 @@
 
         <h2>Browse: Tasks</h2>
         {{ render_table(data,titles,show_actions=True, table_classes='table-striped', header_classes='thead-dark', responsive=True, responsive_class='table-responsive-sm', model=Task,
-            view_url=retrieve_task,
             edit_url=edit_task,
             delete_url=delete_task,
             new_url=add_task) }}
