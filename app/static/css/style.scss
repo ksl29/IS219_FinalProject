@@ -4,7 +4,7 @@
 @import './registration';
 @import './app';
 
-body {
+body,html {
     background-color: $primaryBg !important;
     color: $primaryText !important;
 }
