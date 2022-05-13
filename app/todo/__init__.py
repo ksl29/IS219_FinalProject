@@ -12,6 +12,7 @@ todo = Blueprint('todo', __name__, template_folder='templates')
 
 
 @todo.route('/home')
+@login_required
 def home():
     try:
         return render_template('home.html')
@@ -21,6 +22,7 @@ def home():
 
 @todo.route('/tasks', methods=['GET'], defaults={"page": 1})
 @todo.route('/tasks/<int:page>', methods=['GET'])
+@login_required
 def browse_tasks(page):
     page = page
     per_page = 10
