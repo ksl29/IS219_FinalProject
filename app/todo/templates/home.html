@@ -4,6 +4,7 @@
 
 
     {% block content %}
-        
-
+       <a href="{{url_for("todo.add_task")}}">New Task</a>
+        <h2 id="completed_tasks">Completed Tasks</h2>
+        <h2 id="INcomplete_tasks">Incomplete Tasks</h2>
     {% endblock %}
